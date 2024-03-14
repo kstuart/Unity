@@ -116,6 +116,7 @@ target_compile_options(${PROJECT_NAME}
             -Werror
             -Wall
             $<$<VERSION_GREATER_EQUAL:$<C_COMPILER_VERSION>,8.0.0>:-Wextra-semi-stmt>
+            -Wno-float-equal
         >
         
         # GCC
@@ -137,6 +138,7 @@ target_compile_options(${PROJECT_NAME}
             -Wpointer-arith
             -Werror
             -Wall
+            -Wno-float-equal
         >
 
         # MSVC
